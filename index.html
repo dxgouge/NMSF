@@ -288,13 +288,13 @@ body::after{
 
 .wave-card-top{
   display:flex;align-items:center;justify-content:space-between;
-  padding:3px 7px;
+  padding:12px 7px;
   border-bottom:1px solid var(--border);
   flex-shrink:0;
 }
 .wave-num{
   font-family:'Barlow Condensed',sans-serif;
-  font-size:0.44rem;font-weight:700;letter-spacing:0.2em;color:var(--muted);
+  font-size:0.88rem;font-weight:700;letter-spacing:0.2em;color:var(--muted);
 }
 .wave-badge{
   font-family:'Cinzel',serif;
@@ -610,7 +610,7 @@ function detailMoveCol(move,mi){
     return `${vi>0?'<div style="height:3px;flex-shrink:0;display:flex;align-items:center;justify-content:center"><div style="width:1px;height:100%;background:var(--border2)"></div></div>':''}
     <div class="wave-card${isPre?' pre-card':''}">
       <div class="wave-card-top">
-        <span class="wave-num">WAVE ${e.wi+1}</span>${badge}
+        <span class="wave-num" style="color:${color}">WAVE ${e.wi+1}</span>${badge}
       </div>
       <div class="wave-loc-display">
         <div class="loc-name" style="color:${isPre?'var(--pre)':color}">${LOC_FULL[e.loc.name]}</div>
